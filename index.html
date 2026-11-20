@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Metal Elements ICT skills test</title>
+    
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3f48cc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 26px;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .instructions {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #198754;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #157347;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .result-title {
+            color: #0d6efd;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .result-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0d6efd;
+            padding: 15px;
+            border-radius: 4px;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 12px;
+            font-size: 12px;
+            color: #6c757d;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="header">
+            <h1>Non-Metal Elements</h1>
+            <p>Periodic Table Information Finder</p>
+        </div>
+
+        
+        <div class="content">
+            <div class="instructions">
+                <strong>Instructions:</strong><br>
+                Enter the <strong>symbol</strong> of a non-metal element (Example: H, O, Cl, Ne, Xe).
+            </div>
+
+            <label for="element_input">🔍 Element Symbol</label>
+            <input type="text" id="element_input" placeholder="e.g. Rn">
+
+            <button py-click="show_element">Check Details</button>
+
+            <hr>
+
+            <div class="result-title">📋 Result</div>
+            <div id="result" class="result-box">
+                
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            💡 Skills Test • 2nd Quarter • Undercovered
+        </div>
+    </div>
+
+    
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
